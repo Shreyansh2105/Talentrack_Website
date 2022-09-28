@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentTrack</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- HEADER NAVBAR SECTION STARTS HERE -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="images/brand__logo.png" alt="logo" class="brand__logo" />
+            </div>
+
+            <div class="navbar__nav__items">
+                <div class="nav__items">
+                    <div class="projects" id="middle__elements">
+                        <h4 id="projects">Projects</h4>
+                    </div>
+                    <div class="dropdown__container" id="middle__elements">
+                        <select name="Hire Artists" id="hire_artist" class="language__drop__down">
+                            <option value="hireartist">Hire artist</option>
+                            <option value="actor">Actor</option>
+                            <option value="actor">Singer</option>
+                            <option value="actor">Musician</option>
+                            <option value="actor">Writer</option>
+                            <option value="actor">Dancer</option>
+                            <option value="actor">Filmmaker</option>
+
+                        </select>
+                    </div>
+                    <div class="membership" id="middle__elements">
+                        <h4 id="membership">Membership</h4>
+                    </div>
+                    <div class="help" id="middle__elements">
+                        <h4 id="help">Help</h4>
+                    </div>
+                    <div class="dropdown__container" id="middle__elements">
+                        <select name="More" id="more" class="language__drop__down">
+                            <option value="Get in touch">Get in touch</option>
+                            <option value="How it works">How it works</option>
+                            <option value="About us">About us</option>
+
+                            <option value="Advertisement">Advertisment</option>
+                            <option value="Report abuse">Report abuse</option>
+                            <option value="Awards">Awards</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar__nav__items">
+                <div class="nav__items__signin">
+                    <button class="signin__button">Sign in</button>
+                    <button class="joinnow__button">Join now</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER NAVBAR SECTION ENDS HERE -->
+
+
+    <!-- SLIDER SECTION STARTS HERE -->
+    <div class="imgslider">
+    </div>
+    <!-- SLIDER SECTION ENDS HERE -->
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* SLIDER SECTION STARTS HERE  */
+.imgslider {
+    display: grid;
+    place-items: center;
+    margin-top: 60px;
+    width: 100%;
+    height: 600px;
+    background-image: url(images/banner1.jpg);
+    background-size: 100% 100%;
+    animation: slider 20s linear infinite;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(images/banner1.jpg);
+    }
+
+    25% {
+        background-image: url(images/banner3.jpg);
+    }
+
+    50% {
+        background-image: url(images/banner2.jpg);
+    }
+
+    75% {
+        background-image: url(images/banner4.jpg);
+    }
+
+    100% {
+        background-image: url(images/banner1.jpg);
+    }
+
+}
+/* SLIDER SECTION ENDS HERE  */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* header navbar section starts */
+
+.navbar {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5% 5%;
+    z-index: 10;
+}
+
+.navbar__brand {
+    width: 100px;
+    height: 100%;
+}
+
+.brand__logo {
+    width: 180%;
+    height: 100%;
+}
+
+.signin__button {
+    margin: 8px;
+    background-color: transparent;
+    border: 1px solid #dc030f;
+    color: red;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+}
+
+.signin__button,
+.joinnow__button:hover {
+    cursor: pointer;
+}
+
+.joinnow__button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+}
+
+
+.nav__items {
+    /* text-align: center;
+    justify-content: space-between; */
+    display: flex;
+}
+
+#middle__elements {
+    width: 100%;
+    margin-top: 5px;
+    font-size: large;
+    text-align: center;
+    padding: 0.7rem;
+    justify-content: space-between;
+}
+
+.language__drop__down {
+    font-size: large;
+    background: transparent;
+    border: none;
+}
+
+.language__drop__down:focus {
+    outline: none;
+}
+
+.dropdown__container {
+    border-radius: 4px;
+}
+
+/* header navbar section ends */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+

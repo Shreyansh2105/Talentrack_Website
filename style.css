@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* SLIDER SECTION STARTS HERE  */
+.imgslider {
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 60px;
+    width: 100%;
+    height: 600px;
+    background-image: url(images/banner1.jpg);
+    background-size: 100% 100%;
+    animation: slider 20s linear infinite;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(images/banner1.jpg);
+    }
+
+    25% {
+        background-image: url(images/banner3.jpg);
+    }
+
+    50% {
+        background-image: url(images/banner2.jpg);
+    }
+
+    75% {
+        background-image: url(images/banner5.jpg);
+    }
+
+    100% {
+        background-image: url(images/banner1.jpg);
+    }
+
+}
+
+/* SLIDER SECTION ENDS HERE  */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* header navbar section starts */
+
+.navbar {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5% 5%;
+    z-index: 10;
+}
+
+.navbar__brand {
+    width: 100px;
+    height: 100%;
+}
+
+.brand__logo {
+    width: 180%;
+    height: 100%;
+}
+
+.signin__button {
+    margin: 8px;
+    background-color: transparent;
+    border: 1px solid #dc030f;
+    color: red;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+}
+
+.signin__button,
+.joinnow__button:hover {
+    cursor: pointer;
+}
+
+.joinnow__button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+}
+
+
+.nav__items {
+    /* text-align: center;
+    justify-content: space-between; */
+    display: flex;
+}
+
+#middle__elements {
+    width: 100%;
+    margin-top: 5px;
+    font-size: large;
+    text-align: center;
+    padding: 0.7rem;
+    justify-content: space-between;
+}
+
+.language__drop__down {
+    font-size: large;
+    background: transparent;
+    border: none;
+}
+
+.language__drop__down:focus {
+    outline: none;
+}
+
+.dropdown__container {
+    border-radius: 4px;
+}
+
+/* header navbar section ends */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* HEADING SECTION STARTS HERE  */
+.heading {
+    color: black;
+    text-align: center;
+    margin-top: 2%;
+    padding: 20px;
+}
+
+#heading {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    word-spacing: 2px;
+}
+
+#heading__para {
+
+    font-size: medium;
+    word-spacing: 1px;
+}
+
+.heading__elements {
+    padding: 10px;
+}
+
+/* HEADING SECTION ENDS HERE  */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* STEPS IMAGES SECTION STARTS HERE  */
+.steps__images__section {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.para1,
+.para2 {
+    text-align: center;
+}
+
+.images__section {
+    display: grid;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+    padding: 0;
+}
+
+.image__below__heading {
+    text-align: center;
+}
+
+/* STEP IMAGES SECTION ENDS HERE  */
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* SEARCH AUDITIONS SECTION STARTS HERE */
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 12px;
+    padding-right: 230px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    padding-right: 230px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: red;
+    color: white;
+}
+
+#search__button {
+    padding: 11px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #cc0812;
+    color: white;
+    border: none;
+}
+
+#search__button:hover {
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    margin-left: 19%;
+    margin-right: 19%;
+}
+
+#search {
+    font-size: xx-large;
+    margin-top: 3%;
+    margin-left: 19%;
+}
+
+/* SEARCH AUDITIONS SECTION ENDS HERE */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* POPULAR SEARCHES SECTION STARTS HERE  */
+#popular__searches {
+    font-size: 20px;
+    margin-top: 2%;
+    margin-left: 19%;
+    margin-bottom: 1.5%;
+}
+
+.popular__btns {
+    margin: 0.5%;
+    padding: 9px;
+    margin-bottom: 1%;
+    background-color: rgb(203, 199, 199);
+    border: none;
+    border-radius: 20px;
+}
+
+.popular__searches {
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.popular__btns:hover {
+    cursor: pointer;
+    background-color: rgb(188, 187, 187);
+}
+
+/* POPULAR SEARCHES SECTION ENDS HERE  */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* BLACK LINE SECTION STARTS HERE */
+.black__line {
+    display: flex;
+    background-color: rgb(34, 33, 33);
+    margin-top: 5%;
+    padding: 12px;
+    margin-bottom: 5%;
+    width: 100%;
+    color: white;
+}
+
+#black__line__para {
+    font-size: medium;
+    word-spacing: 3px;
+}
+
+/* BLACK LINE SECTION ENDS HERE  */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/*FEATURED AUDITION SECTION STARTS HERE */
+.featured {
+    display: flex;
+    margin: 4%;
+    margin-right: 19%;
+    margin-left: 18%;
+    justify-content: space-between;
+}
+
+#features__para {
+    font-size: xx-large;
+}
+
+#view__all {
+    color: #cc0812;
+    text-decoration: none;
+}
+
+#view__all:hover {
+    color: black;
+}
+
+.featured__images {
+    margin: 4%;
+    justify-content: space-between;
+    margin-left: 17%;
+    margin-right: 10%;
+}
+
+.images111 {
+    padding: 1%;
+}
+
+/* FEATURED AUDITION SECTION ENDS HERE */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* BROWSE AUDITION SECTION STARTS HERE */
+.browse__audition {
+    margin: 2%;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.browse__audition:hover {
+    cursor: pointer;
+    transition: ease-in-out;
+}
+
+/* BROWSE AUDITION SECTION ENDS HERE */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* CAST SECTION STARTS HERE  */
+#cast {
+    margin-top: 5%;
+    margin-left: 18%;
+}
+
+.cast__heading {
+    font-size: xx-large;
+    margin: 2%;
+}
+
+.cast__images {
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+
+/* CAST SECTION ENDS HERE  */
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* REVIEW SLIDER SECTION STARTS HERE */
+.slider__review {
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 60px;
+    margin: 4%;
+    margin-left: 10%;
+    width: 80%;
+    height: 400px;
+    background-image: url(images/review/r1.png);
+    background-size: 100% 100%;
+    animation: reviewslider 100s linear infinite;
+}
+
+@keyframes reviewslider {
+    12.5% {
+        background-image: url(images/review/r1.png);
+    }
+
+    25% {
+        background-image: url(images/review/r2.png);
+    }
+
+    37.5% {
+        background-image: url(images/review/r3.png);
+    }
+
+    50% {
+        background-image: url(images/review/r4.png);
+    }
+
+    62.5% {
+        background-image: url(images/review/r5.png);
+    }
+
+    75% {
+        background-image: url(images/review/r6.png);
+    }
+
+    87.5% {
+        background-image: url(images/review/r7.png);
+    }
+
+    100% {
+        background-image: url(images/review/r8.png);
+    }
+}
+
+/* REVIEW SLIDER SECTION ENDS HERE */
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* TALENT AND TALENTOWN STYLING */
+.redline__tag__heading:hover {
+    cursor: pointer;
+}
+
+.talenttrak__tt:hover {
+    cursor: pointer;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+.footer {
+    background-color: rgb(219, 219, 219);
+    padding: 3%;
+}
+
+.footerpara {
+    padding: 3%;
+    font-size: medium;
+}
+
+.footerbtn {
+    padding: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.footerpara:hover{
+    cursor: pointer;
+}
+.footerbtnall:hover{
+    cursor: pointer;
+}
